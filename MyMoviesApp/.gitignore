@@ -1,6 +1,9 @@
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
 
+## Api Secret
+app/src/main/java/br/com/zup/mymoviesapp/API_SECRET.kt
+
 # Built application files
 *.apk
 *.ap_

@@ -62,6 +62,8 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.ktor)
     implementation(libs.hilt.android)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson.converter)
     kapt(libs.hilt.compiler)
 
     testImplementation(libs.junit)

@@ -16,7 +16,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import br.com.zup.mymoviesapp.ui.theme.MyMoviesAppTheme
 import br.com.zup.mymoviesapp.viewmodel.MoviesViewModel
 import androidx.lifecycle.Observer
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     private val moviesViewModel: MoviesViewModel by viewModels()
 

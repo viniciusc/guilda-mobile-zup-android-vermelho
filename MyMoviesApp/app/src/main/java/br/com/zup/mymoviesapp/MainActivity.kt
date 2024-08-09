@@ -6,13 +6,25 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.ui.res.painterResource
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import br.com.zup.mymoviesapp.ui.theme.MyMoviesAppTheme
 import br.com.zup.mymoviesapp.viewmodel.MoviesViewModel
 import androidx.lifecycle.Observer
@@ -51,10 +63,48 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
-fun GreetingPreview() {
+fun AppSearchBar(modifier: Modifier = Modifier) {
+    TextField(
+        value = "",
+        onValueChange = {},
+        leadingIcon = {
+            Icon(
+                imageVector = Icons.Default.Search,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(48.dp)
+            )
+        },
+        modifier = modifier
+            .fillMaxWidth()
+            .height(56.dp),
+    )
+}
+
+@Preview
+@Composable
+fun SmallMovieItem(modifier: Modifier = Modifier) {
+    Row(
+        modifier = modifier,
+    ) {
+        Image(
+            painter = painterResource(
+                id = R.drawable.sample_image
+            ),
+            contentDescription = null,
+            modifier = modifier
+        )
+    }
+}
+
+
+
+@Preview
+@Composable
+fun TelaHome() {
     MyMoviesAppTheme {
-        Greeting("Android")
+        AppSearchBar()
     }
 }

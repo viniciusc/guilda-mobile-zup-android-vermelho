@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyMoviesApp</string>
+    <string name="small_movie_item_sample">SmallMovieItem Test!</string>
+    <string name="movie_title_sample">Um sonho de liberdade</string>
+    <string name="movie_release_date_sample">March 1995</string>
+    <string name="movie_reviews_sample">10/10</string>
+    <string name="search_bar_placeholder">Search</string>
+    <string name="recently_viewed_section_name">Vistos recentemente</string>
+    <string name="discover_section_name">Descubra</string>
+    <string name="movie_synopsis_sample">Em 1946, Andy Dufresne (Tim Robbins), um jovem e bem sucedido banqueiro, tem a sua vida radicalmente modificada ao ser condenado por um crime que nunca cometeu, o homicídio de sua esposa e do amante dela. Ele é mandado para uma prisão que é o pesadelo de qualquer detento, a Penitenciária Estadual de Shawshank, no Maine. Lá ele irá cumprir a pena perpétua. Andy logo será apresentado a Warden Norton (Bob Gunton), o corrupto e cruel agente penitenciário, que usa a Bíblia como arma de controle e ao Capitão Byron Hadley (Clancy Brown) que trata os internos como animais. Andy faz amizade com Ellis Boyd Redding (Morgan Freeman), um prisioneiro que cumpre pena há 20 anos e controla o mercado negro da instituição.</string>
 </resources>

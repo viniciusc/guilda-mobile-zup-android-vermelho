@@ -46,17 +46,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-data class DrawableStringPair(
-    @DrawableRes val drawable: Int,
-    @StringRes val text: Int
-)
-
 data class MovieSample(
     @DrawableRes val drawable: Int,
     @StringRes val title: Int,
     @StringRes val description: Int,
     @StringRes val releaseDate: Int,
-    @StringRes val reviews: Int,
+    @StringRes val reviews: Int
 )
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)

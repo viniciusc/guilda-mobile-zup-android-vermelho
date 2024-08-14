@@ -27,7 +27,7 @@ fun SmallMovieItemPreview() {
     MyMoviesAppTheme {
         SmallMovieItem(
             R.drawable.sample_image,
-            R.string.small_movie_item_sample,
+            R.string.movie_title_sample,
             Modifier.padding(8.dp)
         )
     }

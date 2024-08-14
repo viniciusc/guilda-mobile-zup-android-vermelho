@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import br.com.zup.mymoviesapp.MovieSample
 import br.com.zup.mymoviesapp.R
+import br.com.zup.mymoviesapp.sample.sampleMovies
 import br.com.zup.mymoviesapp.ui.theme.MyMoviesAppTheme
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
@@ -34,7 +35,7 @@ fun BigMovieItemGrid(
         columns = GridCells.Fixed(1),
         modifier = modifier
     ) {
-        items(bigMovies) { movie ->
+        items(sampleMovies) { movie ->
             BigMovieItem(
                 drawable = movie.drawable,
                 title = movie.title,
@@ -45,27 +46,3 @@ fun BigMovieItemGrid(
         }
     }
 }
-
-val bigMovies = listOf(
-    MovieSample(
-        drawable = R.drawable.sample_image,
-        title = R.string.movie_title_sample,
-        description = R.string.movie_synopsis_sample,
-        releaseDate = R.string.movie_release_date_sample,
-        reviews = R.string.movie_reviews_sample
-    ),
-    MovieSample(
-        drawable = R.drawable.sample_image,
-        title = R.string.movie_title_sample,
-        description = R.string.movie_synopsis_sample,
-        releaseDate = R.string.movie_release_date_sample,
-        reviews = R.string.movie_reviews_sample
-    ),
-    MovieSample(
-        drawable = R.drawable.sample_image,
-        title = R.string.movie_title_sample,
-        description = R.string.movie_synopsis_sample,
-        releaseDate = R.string.movie_release_date_sample,
-        reviews = R.string.movie_reviews_sample
-    )
-)

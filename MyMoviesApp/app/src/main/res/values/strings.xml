@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MyMoviesApp</string>
-    <string name="small_movie_item_sample">SmallMovieItem Test!</string>
     <string name="movie_title_sample">Um sonho de liberdade</string>
     <string name="movie_release_date_sample">March 1995</string>
     <string name="movie_reviews_sample">10/10</string>

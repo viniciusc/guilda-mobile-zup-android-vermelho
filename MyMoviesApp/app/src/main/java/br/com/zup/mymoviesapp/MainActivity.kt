@@ -24,7 +24,6 @@ import br.com.zup.mymoviesapp.ui.components.HomeSection
 import br.com.zup.mymoviesapp.ui.components.SmallMovieItemGrid
 import br.com.zup.mymoviesapp.ui.theme.MyMoviesAppTheme
 import br.com.zup.mymoviesapp.viewmodel.MoviesViewModel
-import androidx.lifecycle.Observer
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

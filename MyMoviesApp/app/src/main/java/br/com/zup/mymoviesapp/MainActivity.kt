@@ -24,7 +24,9 @@ import br.com.zup.mymoviesapp.ui.components.HomeSection
 import br.com.zup.mymoviesapp.ui.components.SmallMovieItemGrid
 import br.com.zup.mymoviesapp.ui.theme.MyMoviesAppTheme
 import br.com.zup.mymoviesapp.viewmodel.MoviesViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     private val moviesViewModel: MoviesViewModel by viewModels()
 
